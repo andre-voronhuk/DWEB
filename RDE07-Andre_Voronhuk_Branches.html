@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Branch!</title>
+
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+            font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+        }
+
+        html {
+            background-image: url(https://bugfender.com/wp-content/uploads/2019/11/Feature-image.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            background-attachment: fixed;
+
+        }
+
+
+
+        .page-container {
+            background-color: white;
+            width: 60%;
+            height: 100%;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 6%;
+            position: sticky;
+            border-radius: 12px;
+            padding: 0.3rem;
+            border: 1px solid rgba(10, 10, 10, 0.24);
+            box-shadow: 2px 4px 6px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+        }
+
+        .page-container+.page-container {
+            margin-top: 5%;
+            padding: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .comando {
+            color: rgb(74, 153, 74);
+            font-weight: lighter;
+        }
+
+        .img-container {
+            overflow: hidden;
+            height: 270px;
+
+
+        }
+
+        .img-container img {
+            margin-top: -7rem;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="page-container">
+
+        <h1 class="title"> O que é uma Branch? </h1>
+    </div>
+    <div class="page-container">
+
+        <p>Branch, em uma tradução seria “galho” e no mundo da programação,
+            ela tem o mesmo significado, ou seja uma branch é uma
+            ramificação do seu projeto.
+            <br> <br> Os repositórios no GitHub funcionam como uma árvore.
+            Quando criamos um repositório, ele automaticamente é
+            iniciado com a branch master/main, que é equivalente ao tronco da sua árvore,
+            ou seja, é a parte principal do seu projeto. Aspróximas
+            branches são secundárias e, portanto, galhos da branch master.<br><br>
+            Em aplicações desenvolvidas por mais de uma pessoa, é uma boa prática
+            que além da master, cada desenvolvedor crie e desenvolva seu código em
+            sua própria branch, que pode ter qualquer nome.
+        </p>
+    </div>
+    <div class="page-container">
+        <h1 class="title">Como eu crio uma?</h1>
+    </div>
+    <div class="page-container">
+        <p>
+            Para criarmos uma Branch, é necessario usar o comando
+            <span class="comando"> "git branch NomeDaBranch" </span><br>
+
+            e depois<span class="comando"> "git checkout NomeDaBranch"</span>.<br>
+            <br>Porem existe o atalho<span class="comando">
+                "git checkout -b NomeDaBranch"
+            </span>
+            que equivale ao primeiro junto ao segundo comando (branch+checkout).
+            <br><br> Após ter feito isso, voce pode fazer o commit da sua nova branch!
+            <br><br>
+            Outra forma de fazermos isso, é ir até o repositório de seu projeto
+            no github, clicar no menu suspenso "Brach:Main"
+
+        <div class="img-container">
+            <img src="https://i.stack.imgur.com/HshN8.png" alt="">
+        </div><br>
+        <p>Digite no campo de texto qual é o nome da branch que voce gostaria
+            de criar, e caso ela ainda nao existe, será criada da mesma forma que
+            se tivesse usado os comandos acima.
+
+        </p>
+        </p>
+
+    </div>
+    <div class="page-container">
+        <h1 class="title">E depois?</h1>
+    </div>
+    <div class="page-container">
+        <p>Após ter concluido o processo de criação da sua branch, ela esta pronta
+            para ser utilizada deixando em "segurança" a sua branch principal.<br><br>
+            Então agora é a hora de por a mão na massa e começar o desenvolvimento das
+            suas funcionalidades paralelas
+        </p>
+    </div>
+    <div class="page-container">
+        <h1 class="title">Pronto! Mas o que eu faço agora? </h1>
+    </div>
+
+    <div class="page-container">
+        <p>
+            Basta fazer o seu Commit local. <br><br>
+            não sabe o que é isso??
+            então acesse (
+
+            <a href="https://andre-voronhuk.github.io/git/">
+                <span class="comando">https://andre-voronhuk.github.io/git </span>
+
+
+            </a>
+            )
+            <br><br>
+            E então o seu codigo sera upado para a branch secundária que voce criou
+            anteriormente.
+        </p>
+    </div>
+    <div class="page-container">
+        <h1 class="title">&#128552; A branch Main continua igual!&#128552; </h1>
+    </div>
+    <div class="page-container">
+        <p>
+            Sim! esse é o comportamento que esperamos. <br> Agora que voce ja fez o
+            upload do codigo até sua branch secundária, faça os teste necessarios
+            e somente quando voce tiver <font color="red">CERTEZA</font> que tudo esta
+            como deveria, podemos continuar com o merge da sua branch secundária, com a
+            sua branch de produção (main).
+
+        </p>
+    </div>
+    <div class="page-container">
+        <h1 class="title"> Tudo está correto, quero colocar em produção! </h1>
+    </div>
+    <div class="page-container">
+        <p>
+            Otimo! Agora continuaremos com o Merge das suas duas branchs<br>
+            <br>
+            Caso tenham outras pessoas trabalhando no mesmo projeto que voce,
+            é interessante delegar uma para que cuide da parte dos merges com
+            a branch main, que é um processo bastante importante e de certa forma
+            "Perigoso".
+            <br> <br>
+            Como sua branch ja foi testada anteriormente, podemos fazer um "Pull Request"
+            <br>
+            para fazermos isso, vá até a sua branch no GitHub, e clique na opção
+            "Pull Request"
+        <div class="img-container">
+            <img height="200%"
+                src=" https://docs.github.com/assets/images/help/pull_requests/pull-request-start-review-button.png"
+                alt="" />
+        </div><br>
+        <p>
+
+            Agora adicione um titulo e uma descrição ao seu Pull Request e
+            aguarde o seu companheiro aceitar (ou não) as suas alterações. <br><br>
+
+
+        </p>
+
+
+        </p>
+    </div>
+    <div class="page-container">
+
+        <h1 class="title">E como ele vai fazer isso? </h1>
+    </div>
+    <div class="page-container">
+        <p>Basta ir até o repositório do projeto, clicar na guia "Pull requests"
+            e depois clicar em "Merge pull request"
+        </p>
+        <div class="img-container">
+            <img height="390px"
+                src="https://docs.github.com/assets/images/help/pull_requests/select-rebase-and-merge-from-drop-down-menu.png"
+                alt="" />
+        </div><br>
+        <p>
+            Sera necessario selecionar qual é o tipo de merge que sera feito,
+            podemos usar a primeira opção, "Create a merge commit" que ira adicionar
+            um a um os commits feitos em sua branch secundária.
+        </p>
+    </div>
+    <div class="page-container">
+        <h1 class=" title">&#128522; Funcionou! </h1>
+    </div>
+    <div class="page-container">
+        <p>
+            Então o processo de criação, até o momento do deploy de sua branch
+            esta concluido de maneira em que é seu projeto esta devidamente versionado
+            e organizado em "galhos" como foi explicado no inicio da pagina!
+
+        </p>
+    </div>
+
+    <div class="page-container">
+        <h1 class="title"> Mas como eu hospedo esse site?</h1>
+    </div>
+    <div class="page-container">
+        <p> Basta ir nas configurações do seu repositório,
+            <br><br>
+            (não se esqueça de tornar ele público!)
+            <br><br> E procurar por Github-Pages, quando encontrar
+            selecione qual sera a branch principal<br><br> clique em "Save"
+            e pronto! <br><br>seu projeto estará em instantes hospedado em:<br><br>
+            https://NomeDoUsuario.github.io/NomeDoRepositorio/
+        </p>
+    </div>
+
+
+    <div style="margin-top:50%;"></div>
+</body>
+
+</html>

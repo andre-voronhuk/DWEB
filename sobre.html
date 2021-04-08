@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Sobre - André Voronhuk</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
@@ -15,44 +19,82 @@
         color: white;
     }
 
-    a {
-        text-decoration: none;
-        color: inherit;
+    body {
+        background-color: rgb(50 50 60);
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Nunito Sans';
+
+
     }
 
-    #name-container {
+    a {
+        text-decoration: none;
+        color: lime;
 
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: lime;
+    }
+
+    #profile-container {
         border-radius: 8px;
-         
-        box-shadow: 0 6px 15px rgb(1 0 255), 0 0 0 5px rgb(255 0 189);
+        margin-left: 26%;
+        box-shadow: 0 0px 28px rgb(0 255 0), 0 0 0 1px rgb(0 70 0);
         padding: 1rem;
         height: 10%;
         width: 50%;
         align-items: center;
         text-align: right;
-        background-color:midnightblue;
+        background-color: midnightblue;
+        margin-top: 3%;
+        margin-bottom: 12%;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgb(80 80 100);
+        border-radius: 12px;
 
     }
 
+    hr {
+        box-shadow: 0 0px 28px rgb(0 255 0), 0 0 0 1px rgb(0 70 0);
+        border-radius: 8px;
+        border: solid 2px lime;
+    }
 
-    #name-container dt figcaption {
+    ::-webkit-scrollbar-thumb {
+        background: rgb(12, 200, 12);
+        border-radius: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(0, 160, 0);
+        border-radius: 12px;
+    }
+
+    #profile-container dt figcaption {
         color: rgb(16, 240, 16);
         text-align: center;
-
-
-
-
-
     }
 
-    #name-container figure div {
+    #profile-container dt {
+        text-align: center;
+    }
+
+    #profile-container figure div {
         border-radius: 100%;
         overflow: hidden;
         margin-left: 31%;
         height: 195px;
         width: 195px;
-        border: 3px solid rgb(194, 128, 248);
-
+        box-shadow: 0 0px 30px rgb(0 255 0), 0 0 0 2px rgb(0 255 0);
+        border: solid 1px rgb(0 255 0);
     }
 
     .content {
@@ -62,27 +104,7 @@
 
     .tooltip {
         margin-bottom: -12px;
-
         color: lime;
-    }
-
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: rgba(255, 255, 255, 0.329);
-        color: inherit;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-
-        position: absolute;
-        z-index: 1;
-    }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        margin-top: 1.4rem;
-        margin-left: -12rem;
     }
 
     .ul-content {
@@ -100,14 +122,14 @@
 
     #wrap-image img {
         margin-left: -47rem;
+        filter: saturate(160%);
 
     }
 </style>
 
 <body>
-
     <p style="font-size:14px; ">
-    <div id="name-container">
+    <div id="profile-container">
         <dl>
             <dt>
                 <figure>
@@ -118,8 +140,7 @@
                     <figcaption><br>
             <dt>
                 <h2>
-                    Andre L. Voronhuk
-
+                    André L. Voronhuk
                 </h2>
             </dt>
             <hr>
@@ -130,81 +151,61 @@
                 <p class="tooltip">
                     <a target="_blank"
                         href="https://irati.ifpr.edu.br/nossos-cursos/tecnicos-integrados/tecnico-em-informatica-integrado-ao-ensino-medio/">
-
-                        Técnico em informatica formado pelo
+                        Técnico em informática formado pelo
                         IFPR.
-                        <span class="tooltiptext">Acessar Site</span>
                 </p>
                 </a>
                 <br>
                 <a
                     href="https://irati.ifpr.edu.br/nossos-cursos/cursos_superiores/tecnologia-em-analise-e-desenvolvimento-de-sistemas/">
-
                     <p class="tooltip">
-                        Analise e Desenvolvimento de Sistemas
-                        <span class="tooltiptext">Acessar Site</span>
+                        2° Semestre - Análise e Desenvolvimento de Sistemas
                     </p>
-
-
                 </a>
-
                 <br>
-
                 </p>
             </dt>
-            <dd>
-                <p style="font-size:14px;color:lime">
-                    <i>
-                        2°Ano
-                    </i>
-                </p>
-            </dd>
         </dl>
-
         </figure>
         </dt>
         <hr>
-        <h3>Experiencia Profissional/Portifolio</h3>
+        <h3>Experiência Profissional/Portfólio</h3>
         <p class="content">
             Técnico em Suporte de TI em <a target="_blank" href="https://www.facebook.com/hospitalemirati/">
                 <i>
-                    <u>
-                        Santa casa de Irati
-                    </u>
+                    Santa casa de Irati
                 </i>
             </a>
             <br><br>
-            <a target="_blank" href="https://github.com/andre-voronhuk/INDICE"><u><i>Aqui!</i></u></a> voce pode ver
+            <a target="_blank" href="https://github.com/andre-voronhuk/INDICE"><i>Aqui!</i>
+            </a> você pode ver
             alguns projetos
             feitos por mim <br>
-
-
             alguns deles possuem uma estrutura/design simples como <a target="_blank"
-                href=" https://andre-voronhuk.github.io/listaDeTarefas"><u><i>esse</i></u></a> *ler comentario
+                href=" https://andre-voronhuk.github.io/listaDeTarefas">
+                <i>esse</i>
+            </a>
         </p>
         <hr>
         <h3>Hobbies</h3>
         <p class="content">
-            Em meu tempo livre gosto de Jogar<br> <i>Counter-Strike: Global Ofenssive</i> <br>e alguns outros jogos com
+            Em meu tempo livre gosto de jogar<br> <i>Counter-Strike: Global-Offensive</i> <br>e alguns outros jogos com
             meus
             amigos que podem ser
-            vistos <a target="_blank" href="https://steamcommunity.com/id/voronhuk/games/"> <i><u>aqui</i></u> </a>
-            <br> <br> Minha 'história' com o <i>CS</i> começou ha muito tempo,
+            vistos <a target="_blank" href="https://steamcommunity.com/id/voronhuk/games/"> aqui </a>
+            <br> <br> Minha 'história' com o <i>CS</i> começou há muito tempo,
             quando vi um amigo <br> meu jogando a <a href="https://store.steampowered.com/app/10/CounterStrike/">
-                <i> <u> versão 1.6</u></i></a> em
+                <i> versão 1.6</i></a> em
             uma lan-house onde frequentávamos,<br> depois disso gostei muito do jogo e voltei diversas vezes naquela
             lan-house <br> para jogar esse mesmo jogo.
             <br> <br>
             Já no dia 17/07/2014 eu conheci o tão fabuloso<a
                 href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">
-                <i> <u>"CS-GO"</u></i></a>
-            apartir dessa data, <br> depois dessa data meu gosto pelo jogo
+                <i> "CS-GO"</i></a>,
+            <br> depois dessa data meu gosto pelo jogo
             só aumentou durante esses 6 anos.<br> <br>
-
-            No mes de Fevereiro desse ano, consegui chegar na maior 'patente'
-            (A Elite Global) do jogo, que é o que nivela a
-            habilidade dos jogadores!
-
+            No mês de Fevereiro desse ano, consegui chegar na maior "divisão"
+            do jogo <br>(A Elite Global).
         <div id="wrap-image" width="200px" height="300px">
             <img
                 src="https://steamuserimages-a.akamaihd.net/ugc/1750181936820021499/EA7BAA50E06A5E6484A70A87830C8870082D10FD/" />
@@ -218,13 +219,12 @@
             <a href=" https://www.linkedin.com/in/andré-voronhuk-3349a11b0/" target="_blank">
                 LinkedIn - Perfil Online.
             </a>
-
             <br><br>
             <a href=" https://github.com/andre-voronhuk" target="_blank">
                 GitHub - Perfil Pessoal.
             </a> <br>
             <a href="https://github.com/andre-voronhuk/INDICE" target="_blank">
-                GitHub - Repositorio com os Principais Projetos.
+                GitHub - Repositório com os Principais Projetos.
             </a>
             <br><br>
             <a href=" https://steamcommunity.com/id/voronhuk/" target="_blank">
@@ -232,16 +232,9 @@
             </a>
             <br><br>
             <a href="mailto:andrevoronhuk@gmail.com">Email: andrevoronhuk@gmail.com </a>
-
-
-
-
         </p>
         </p>
-
     </div>
-
-
 </body>
 
 </html>

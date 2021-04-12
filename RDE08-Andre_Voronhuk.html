@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            background-color: rgb(65, 65, 69);
+            color: white;
+        }
+
+        ::-webkit-scrollbar {
+            width: 13px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(131, 131, 131);
+            box-shadow: 0 0 4px 3px rgb(27, 27, 27);
+            border-radius: 8px;
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(90, 90, 90);
+
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgb(35, 35, 35);
+        }
+
+        .desc {
+            max-width: 400px;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .content {
+            margin-left: 22px;
+        }
+
+        .title li {
+            margin-top: 5rem;
+            text-shadow: 0 3px 3px rgb(0, 0, 0);
+        }
+
+        .rodape {
+            margin-top: 1rem;
+            background-color: #666;
+            height: 10rem;
+            color: #ccc;
+            padding: 1rem;
+        }
+
+        u {
+            color: rgb(225, 54, 32);
+            font-stretch: expanded;
+        }
+
+        a {
+            color: lime;
+        }
+
+        h1 {
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        code {
+            color: violet;
+            background-color: rgb(41, 43, 53);
+            padding: 2px;
+        }
+
+        table {
+            font-family: 'poppins', sans-serif;
+            margin: 12px;
+            font-size: 18px;
+            border-collapse: collapse;
+            width: fit-content;
+        }
+
+        tr:first-of-type {
+            color: rgb(214, 214, 214);
+        }
+
+        td,
+        th {
+            border: 1px solid #F41;
+            text-align: center;
+            box-shadow: 0 1px 2px rgb(120, 7, 6);
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            color: #fff;
+            background-color: rgb(43, 43, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>
+            Tags Avançadas
+        </h1>
+        <h3 class="title">
+            <li>
+                Table
+            </li>
+        </h3>
+        <p class="desc">
+            A Tag <u>table</u> serve para mostrar varias informações em colunas, sendo util por exemplo para mostrar
+            dados de
+            varias
+            pessoas de uma forma bem simples.
+        </p>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Telefone</th>
+            </tr>
+            <tr>
+                <td>Juca da Silva</td>
+                <td>18</td>
+                <td>42 9 9822-3162</td>
+            </tr>
+            <tr>
+                <td>Edson Raul da Luz</td>
+                <td>28</td>
+                <td>42 9 9840-1349</td>
+            </tr>
+            <tr>
+                <td>Lara Catarina Alves</td>
+                <td>15</td>
+                <td>42 9 9810-8122</td>
+            </tr>
+        </table>
+        <h3 class="title">
+            <li>Del/Ins, Sub/Sup </li>
+        </h3>
+        <p class="desc">
+            As tags, <u> Del</u> e <u>Ins</u> significam 'Delete' e 'Insert', basicamente
+            a tag del desenha um traço encima do seu conteúdo.<br>
+            Enquanto a Tag Ins sublinha o texto que esta dentro dela!
+        </p>
+        <p> Exemplo: </p>
+        <p class="desc">Eu gosto muito de <del>Delphi</del> <ins>JavaScript</ins>!</p>
+        <p class="desc">
+            Já as Tags <u>Sub</u> e <u>Sup</u> significam 'subscript' e
+            'superscript' respectivamente, ou seja, desenha o texto acima
+            ou abaixo do alinhamento vertical.
+        </p>
+        <p>Exemplo</p>
+        <p>Eu sou um <sup> superscript</sup><br> e eu sou um <sub> subscript</sub>
+        <h3 class="title">
+            <li>Blockquote e Q</li>
+        </h3>
+        <p class="desc">
+            <u>blockquote</u> significa 'Bloco de Citação' em uma tradução,
+            e a sua função é exatamente essa, citar um trecho de outro lugar.
+            <br> <br>Nesse exemplo estaremos citando o 'Bacon Ipsum' um
+            gerador de texto aleatório sobre Bacon!
+        </p>
+        <blockquote cite="https://baconipsum.com/?paras=5&type=all-meat&start-with-lorem=1">
+            Bacon ipsum dolor amet ball tip ground round hamburger chicken flank filet mignon doner tongue frankfurter
+            bacon salami.
+            Chislic doner brisket jerky pork sirloin pig tenderloin meatloaf salami pastrami venison. Beef ribs t-bone
+            cupim shank
+            ham hock.
+        </blockquote> <br>
+        <p>A Tag <u>q</u> tem a mesma função do blockquote porém reduzido
+            é usado quando se tem a necessidade de fazer citações menores <br>
+            Exemplo:
+        </p>
+        <p>Conforme diz veggieipsum.com:
+            <q>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth
+        </p>
+        <h3 class="title">
+            <li>abbr</li>
+        </h3>
+        <p class="desc">
+            A tag <u>abbr</u> tem a função de explicar uma abreviação<br>
+            Exemplo:
+        </p>
+        <p>
+            O conceito de <abbr title="Single Page Application"> SPA</abbr>
+            melhora significativamente a <abbr title="User Experience"> Ux</abbr> da sua aplicação.
+        </p>
+        <h3 class="title">
+            <li>cite</li>
+        </h3>
+        <p class="desc">
+            A tag <u>cite</u> serve para citar o autor da obra/trabalho apresentado.
+            <br> Exemplo:
+        </p>
+        <img src="https://i.pinimg.com/236x/5b/a5/89/5ba589b493eaef3b196f56ca762e3021--siberia-squats.jpg" alt=""><br>
+        <cite>The Natural Habit of a Slav - Boris 2019</cite>
+        <h3 class="title">
+            <li>address</li>
+        </h3>
+        <p class="desc">
+            A tag <u>address</u> serve para inserir um endereço ao seu site.
+            <br> Exemplo:
+        </p>
+        <address>
+            Site criado por:
+            <a target="_blank" href="mailto:andrevoronhuk@gmail.com">
+                Andre Voronhuk
+            </a>
+            <br>
+            acesse meu Github:<br>
+            <a target="_blank" href="https://github.com/andre-voronhuk"> Aqui</a>
+            <br>
+            Rua Jonas das violetas
+            N° 564, <br>
+            Brasil
+        </address>
+        <h3 class="title">
+            <li>bdo</li>
+        </h3>
+        <p class="desc">
+            A tag <u>bdo</u> significa 'Bi-Directional Override' ou
+            em uma tradução 'Substituição bidirecional', ela serve para dizer qual é a direção que deve ser exibido o
+            texto
+            <br> Exemplo de texto invertido:
+        </p>
+        <bdo dir="rtl">
+            eu estou bem?
+        </bdo>
+        <h3 class="title">
+            <li>code</li>
+        </h3>
+        <p class="desc">
+            A tag <u>code</u> serve para inserir um trecho de
+            código em seu site <br>
+            Exemplo:
+        </p>
+        <p>
+            Em CSS a propriedade <code>box-shadow</code> serve para colocar
+            sombreamento em um elemento
+        </p>
+        <h3 class="title">
+            <li>pre</li>
+        </h3>
+        <p class="desc">
+            A tag <u>pre</u> serve para inserir um texto pré-formatado.<br>
+            Ou seja ela não ignora os espaços em branco do código,
+            como é o comportamento padrão do HTML<br>
+            Exemplo:
+        </p>
+        <pre>
+            Jelly beans 
+                jujubes      
+                    brownie        
+                        powder cake cookie brownie       
+                             chocolate bar
+                                tootsie roll. 
+                                    Chocolate     
+            cake        marzipan     sweet 
+            caramels 
+                      <i>Cupcake Ipsum</i> 
+            jujubes 
+                                                        gingerbread.
+        </pre>
+        <h3 class="title">
+            <li>kbd</li>
+        </h3>
+        <p class="desc">
+            A tag <u>kbd</u> serve para definir mostrar teclas do
+            teclado do usuário<br>
+            Exemplo:
+        </p>
+        <kbd>CTRL</kbd> + <kbd>A</kbd> - Seleciona a pagina inteira!
+    </div>
+    <div class="rodape">
+        <p>Voce chegou ao fim dessa pagina </p>
+        <p>Esse site foi feito por:
+            <a target="_blank" href="https://andre-voronhuk.github.io/DWEB/sobre.html">
+                André Voronhuk
+            </a>
+
+        </p>
+        Esse é meu <a target="_blank" href="https://github.com/andre-voronhuk"> Github</a> &#128521;
+
+    </div>
+</body>
+
+</html>

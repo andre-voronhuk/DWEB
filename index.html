@@ -21,12 +21,22 @@
         }
 
         hr {
-            margin-top: 3rem;
+            margin-top: 1rem;
             margin-bottom: 3rem;
         }
 
         a {
             text-decoration: none;
+            color: rgb(6, 126, 185);
+
+
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+
+
 
         }
 
@@ -129,7 +139,7 @@
 
         .progress .done .step,
         .progress .active .step {
-            border: 3px solid rgb(21, 196, 21);
+            border: 1.6px double rgb(21, 196, 21);
             padding: 5px;
             font-weight: bold;
         }
@@ -138,10 +148,8 @@
             margin-bottom: 7rem;
         }
 
-        .footer {
-            margin-top: 8.5rem;
-            margin-bottom: 4rem;
-        }
+
+
 
         @media (max-width: 949px) {
             .progress li {
@@ -156,7 +164,8 @@
 
             .name {
                 width: 390%;
-                margin-top: 2rem;
+                margin-top: 0rem;
+                font-size: 19px;
             }
 
             li {
@@ -165,18 +174,18 @@
             }
 
             .step {
-                margin-left: 188%;
-                margin-bottom: 4rem;
+                margin-left: 180%;
+
+                margin-bottom: 3rem;
+                font-size: 26px;
+
             }
 
             .progress {
-                margin-bottom: -2rem;
+                margin-bottom: -3rem;
             }
 
-            .footer {
-                margin-top: -3rem;
 
-            }
 
 
 
@@ -184,13 +193,36 @@
 
 
         }
+
+        .head {
+            background-color: rgb(14, 132, 62);
+            margin-top: -1.25rem;
+            color: white;
+        }
+
+        .footer {
+
+            background-color: rgb(14, 132, 62);
+            margin-top: 8.8rem;
+            color: white;
+            font-size: 16px;
+
+        }
+
+        .footer a {
+            color: rgb(230, 255, 9)
+        }
     </style>
 </head>
 
 <body>
-
-    <h2> Projeto na Trilha do Aprendizado </h2>
-    <br>
+    <div class="head">
+        <br>
+        <h2> Projeto na Trilha do Aprendizado <br> </h2>
+        <h3>By André Voronhuk</h3>
+        <br>
+        <hr>
+    </div>
     <ol class="progress" data-steps="4">
         <li class="done">
             <span class="name">
@@ -270,10 +302,10 @@
         <p> <a href="https://andre-voronhuk.github.io/DWEB/sobre.html" target="_blank">Clique aqui</a> para saber um
             pouco
             mais sobre mim </p>
-        <br><br>
+        <br>
         <a href="https://andre-voronhuk.github.io/DWEB/site.zip" target="_blank">
             Baixar esse site
-        </a><br>
+        </a><br><br>
     </div>
 </body>
 

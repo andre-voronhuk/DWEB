@@ -47,7 +47,7 @@
             gap: 1rem;
             text-align: center;
             width: 90%;
-            margin-left: 2rem;
+            margin-left: 4rem;
         }
 
         .item {
@@ -72,7 +72,7 @@
                 flex-direction: row;
                 gap: 1rem;
                 text-align: center;
-                margin-left: 2%;
+                margin-left: 5%;
                 width: 90%;
 
             }
@@ -87,9 +87,10 @@
 </head>
 
 <body>
+
     <div class="header">
 
-        <h1>Incoporando Multimídias ao Site</h1>
+        <h1>Incoporando Multimídias</h1>
     </div>
 
     <div class="primeira-linha">
@@ -127,6 +128,51 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             <hr>
+        </div>
+
+        <div class="item">
+            <h3>Video local</h3>
+            <hr>
+            <video width="100%" height="100%" controls>
+                <source src="media/kgb.mp4">
+            </video>
+            <hr>
+        </div>
+        <div class="item">
+            <h3>Audio local</h3>
+            <hr> <br><br>
+
+
+            <h4>Hard Bass School - Narkotik Kal </h4>
+            <audio preload="metadata" controls>
+                <source src="media/hardbass.mp3" type="audio/mp3">
+            </audio>
+            <br><br>
+            <hr>
+
+        </div>
+
+        <div class="item">
+            <h3>Imagem responsiva</h3>
+            <hr>
+
+            <picture height="80%" width="80%">
+                <source media="(min-width:650px)" srcset="https://pbs.twimg.com/media/DUTzbzmX4AEv4tK.jpg:small">
+
+
+                <source media="(max-width:566px)"
+                    srcset="https://lyricstranslate.com/files/styles/large/public/boris-1024x1024.jpg">
+
+                </source>
+
+                <img src="http://pm1.narvii.com/7205/504b4ab4b81c8fdbb31e2a4963fd9452c2b3f1acr1-954-940v2_00.jpg" />
+
+
+            </picture>
+
+
+            <hr>
+            <br><br><br>
         </div>
     </div>
 </body>

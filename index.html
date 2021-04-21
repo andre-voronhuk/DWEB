@@ -77,8 +77,8 @@
 
         .progress .step {
             color: black;
-            border: 3px solid silver;
-            background-color: silver;
+            border: 3px solid rgba(41, 41, 41, 0.493);
+            background-color: rgb(165, 165, 165);
             border-radius: 50%;
             line-height: 1.2;
             width: 1.2em;
@@ -100,7 +100,7 @@
         .progress .step:before {
             content: "";
             display: block;
-            background-color: silver;
+            background-color: rgba(41, 41, 41, 0.493);
             height: 0.4em;
             width: 50%;
             position: absolute;
@@ -112,7 +112,7 @@
         .progress .step:after {
             content: "";
             display: block;
-            background-color: silver;
+            background-color: rgba(41, 41, 41, 0.493);
             height: 0.4em;
             width: 50%;
             position: absolute;
@@ -132,17 +132,19 @@
         .progress .done .step,
         .progress .done .step:before,
         .progress .done .step:after,
-        .progress .active .step,
-        .progress .active .step:before {
+        .progress .progress {
             background-color: rgb(107, 11, 197);
         }
 
         .progress .done .step,
-        .progress .active .step {
-            border: 1.6px double rgb(21, 196, 21);
+        .progress .step {
+            border: 1px solid rgb(84, 52, 99);
+            box-shadow: 0 0px 7px 1px rgb(102, 67, 126);
             padding: 5px;
             font-weight: bold;
         }
+
+
 
         .progress {
             margin-bottom: 7rem;
@@ -255,7 +257,7 @@
             <span class="name">
 
                 <a href="https://andre-voronhuk.github.io/DWEB/RDE05-Andre_Voronhuk.html" target="_blank">
-                    RDE05-Hyperlinks </a>
+                    RDE05-Hyperlink </a>
             </span>
             <span class="step"><span>5</span></span>
         </li>
@@ -274,7 +276,7 @@
                 </a></span>
             <span class="step"><span>7</span></span>
         </li>
-        <li class="active">
+        <li class="done">
             <span class="name">
                 <a href="https://andre-voronhuk.github.io/DWEB/RDE08-Andre_Voronhuk.html" target="_blank">
                     RDE08-Tags Avançadas
@@ -282,6 +284,43 @@
 
             </span>
             <span class="step"><span>8</span></span>
+        </li>
+
+    </ol>
+
+
+    <br><br><br>
+    <ol class="progress" data-steps="4">
+        <li class="done">
+            <span class=" name">
+
+                <a href="https://andre-voronhuk.github.io/DWEB/RDE09-Andre_Voronhuk.html" target="_blank">
+                    RDE09-Multimídias </a>
+            </span>
+            <span class="step"><span>9</span></span>
+        </li>
+        <li class="active">
+            <span class="name"><a href="https://andre-voronhuk.github.io/DWEB/" target="_blank">
+                    RDE10 - ?
+                </a>
+            </span>
+            <span class="step"><span>10</span></span>
+        </li>
+        <li class="active">
+            <span class="name">
+                <a href="https://andre-voronhuk.github.io/DWEB/" target="_blank">
+                    RDE011 - ?
+                </a></span>
+            <span class="step"><span>11</span></span>
+        </li>
+        <li class="active">
+            <span class="name">
+                <a href="https://andre-voronhuk.github.io/DWEB/" target="_blank">
+                    RDE12 - ?
+                </a>
+
+            </span>
+            <span class="step"><span>12</span></span>
         </li>
 
     </ol>

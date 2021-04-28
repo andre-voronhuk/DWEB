@@ -5,10 +5,224 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/136/136527.png" type="image/x-icon">i
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Css</title>
+    <style>
+        body html {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        code {
+            background: #181820;
+            color: #90d0e4;
+            padding: 2px;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: rgb(35, 35, 38);
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgb(142, 42, 224);
+            border-radius: 8px;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgb(122, 22, 204);
+        }
+        
+        body {
+            background-color: rgb(22, 22, 22);
+            font-family: 'Open Sans', sans-serif;
+            padding: 1%;
+        }
+        
+        h1 {
+            color: rgb(52, 226, 105);
+            text-align: center;
+        }
+        
+        p {
+            color: rgb(142, 42, 224);
+            font-size: 15px;
+        }
+        
+        .container {
+            border-radius: 10px;
+            margin: 0.5rem;
+            background-color: rgb(22, 22, 22);
+            text-align: center;
+            padding: 1rem;
+            width: 90%;
+        }
+        
+        .container h1 {
+            color: rgb(142, 42, 224);
+            font-weight: bold;
+            font-size: 28px;
+        }
+        
+        .container p {
+            color: rgb(52, 226, 105);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin: 0.8rem;
+            font-size: 20px;
+        }
+        
+        .cardLeft {
+            margin-top: 3rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background: rgb(35, 35, 38);
+        }
+        
+        .spacer {
+            width: 1%;
+        }
+        
+        .cardRight {
+            margin-top: 3rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            background: rgb(35, 35, 38);
+            align-items: center;
+        }
+        
+        .container-right {
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 0.5rem;
+            background-color: rgb(22, 22, 22);
+            text-align: center;
+            width: 80%;
+        }
+        
+        .cardRight .container-right+p {
+            color: rgb(52, 226, 105);
+            font-size: 15px;
+            text-align: end;
+            padding: 3rem;
+        }
+        
+        .container-right h1 {
+            color: rgb(52, 226, 105);
+            font-size: 28px;
+        }
+        
+        .container-right p {
+            font-size: 20px;
+        }
+        
+        @media (max-width: 800px) {
+            .cardLeft {
+                padding: 1rem;
+                display: block;
+                text-align: justify;
+            }
+            .cardRight {
+                display: block;
+                padding: 1rem;
+                text-align: center;
+            }
+            .cardRight .container-right+p {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Cascading Style Sheets</h1>
+    <br>
+    <div class="cardLeft">
+        <div class="container">
+            <h1>
+                CSS - Definição
+            </h1>
+            <p>
+
+                É um mecanismo para adicionar estilização à um site na Web, permitindo a alteração das cores, alinhamento e fontes.
+            </p>
+        </div>
+
+        <div class="spacer">
+        </div>
+        <p>
+            A esmagadora maioria dos sites modernos utilizam esse recurso para melhorar a Ux (experiência do usuário) fazendo um site mais bonito e agradável ao olhos.
+        </p>
+
+    </div>
+    <div class="cardRight">
+        <div class="container-right">
+            <div class="spacer">
+
+            </div>
+            <h1>
+                CSS - Inline
+            </h1>
+            <p>
+                Consiste em colocar a estilização diretamento no componente
+            </p>
+        </div>
+        <p>
+            Pode ser usado para alterações pontuais e simples, no geral apesar de funcionar, é algo que devemos evitar usar fora dessa situação pois atrapalha bastante a manutenção em um site, ja que para alterar o estilo, seria necessario ir componente por componente
+            mudando seu atributo 'Style'
+        </p>
+    </div>
+
+
+    <div class="cardLeft">
+        <div class="container">
+            <h1>
+                CSS - Incorporado
+            </h1>
+            <p>
+                Também chamado de Internal, é utilizar a estilização dentro da tag: <br> <code> &#60;Style&#62;</code>
+            </p>
+        </div>
+        <div class="spacer">
+        </div>
+        <p>
+            É dessa maneira que este site esta sendo implementado, é usado quando a estilização sera atrelada apenas a um arquivo, e de maneira geral, em projetos menos complexos. A refatoração para o modo 'Externo' que é o mais aconselhado, pode ser feita de maneira
+            bastante simples copiando o conteudo da tag <code> &#60;Style&#62;</code> para um arquivo externo .css
+        </p>
+
+    </div>
+
+
+    <div class="cardRight">
+        <div class="container-right">
+            <div class="spacer">
+
+            </div>
+            <h1>
+                CSS - Externo
+            </h1>
+            <p>
+                Consiste em colocar a estilização em um arquivo a separado do HTML
+            </p>
+        </div>
+        <p>
+            Você pode colocar toda a sua estilização em um arquivo .css separado, depois de fazer isso basta usar a tag: <code> &#60;link&#62;</code> com os parametros <code> rel="stylesheet"</code> e <code> href="caminho/arquivo.css"</code>
+        </p>
+    </div>
+
+
+
 
 </body>
 

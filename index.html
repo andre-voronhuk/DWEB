@@ -19,14 +19,19 @@
             text-align: center;
         }
         
+        body {
+            background-color: rgb(20, 20, 20);
+        }
+        
         hr {
             margin-top: 1rem;
             margin-bottom: 3rem;
+            border: 1px solid rgb(129, 226, 118);
         }
         
         a {
             text-decoration: none;
-            color: rgb(6, 126, 185);
+            color: rgb(129, 226, 118);
         }
         
         a:hover {
@@ -34,7 +39,7 @@
         }
         
         .progress a {
-            color: rgb(0, 164, 150)
+            color: rgb(129, 226, 118);
         }
         
         ol.progress[data-steps="4"] li {
@@ -57,7 +62,6 @@
         
         .progress .name {
             display: block;
-            vertical-align: bottom;
             text-align: center;
             margin-bottom: 1em;
             color: black;
@@ -66,8 +70,7 @@
         
         .progress .step {
             color: black;
-            border: 3px solid rgba(41, 41, 41, 0.493);
-            background-color: rgb(165, 165, 165);
+            background-color: rgb(43, 44, 43);
             border-radius: 50%;
             line-height: 1.2;
             width: 1.2em;
@@ -122,19 +125,40 @@
         .progress .done .step:before,
         .progress .done .step:after,
         .progress .progress {
-            background-color: rgb(107, 11, 197);
+            background-color: rgb(107, 11, 197) !important;
         }
         
         .progress .done .step,
         .progress .step {
-            border: 1px solid rgb(84, 52, 99);
-            box-shadow: 0 0px 7px 1px rgb(102, 67, 126);
+            border: 1px solid rgb(84, 52, 99) !important;
+            box-shadow: 0 0px 12px 1px rgb(1 6 1) !important;
             padding: 5px;
             font-weight: bold;
         }
         
         .progress {
             margin-bottom: 7rem;
+        }
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: rgb(129, 226, 118);
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgb(80, 17, 170);
+            border-radius: 6px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgb(107, 11, 197);
         }
         
         @media (max-width: 949px) {
@@ -165,20 +189,20 @@
         }
         
         .head {
-            background-color: rgb(14, 132, 62);
+            background-color: rgb(80, 17, 170);
             margin-top: -1.25rem;
-            color: white;
+            color: rgb(129, 226, 118);
         }
         
         .footer {
-            background-color: rgb(14, 132, 62);
+            background-color: rgb(80, 17, 170);
             margin-top: 8.8rem;
             color: white;
             font-size: 16px;
         }
         
         .footer a {
-            color: rgb(230, 255, 9)
+            color: rgb(129, 226, 118)
         }
     </style>
 </head>

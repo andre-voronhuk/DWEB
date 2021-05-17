@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/136/136527.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Agrupamento</title>
+    <style>
+        body,
+        html {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Open Sans', sans-serif;
+            color: #e7e7e7;
+        }
+        
+        code {
+            background: #181820;
+            color: #90d0e4;
+            padding: 2px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 17px;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: rgb(35, 35, 38);
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgb(172, 42, 224);
+            border-radius: 8px;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgb(122, 22, 204);
+        }
+        
+        body {
+            background-color: rgb(22, 22, 22);
+            font-family: 'Open Sans', sans-serif;
+            padding: 1%;
+        }
+        
+        h1 {
+            color: rgb(52, 226, 105);
+            text-align: center;
+        }
+        
+        p {
+            color: rgb(172, 42, 224);
+            font-size: 15px;
+        }
+        
+        .container+.container {
+            color: rgb(172, 42, 224);
+        }
+        
+        .container {
+            color: #90d0e4;
+            border-radius: 10px;
+            margin: 0.5rem;
+            background-color: rgb(22, 22, 22);
+            text-align: center;
+            padding: 1rem;
+            width: 90%;
+        }
+        
+        .container h1 {
+            color: rgb(172, 42, 224);
+            font-weight: bold;
+            font-size: 28px;
+        }
+        
+        .container p {
+            color: rgb(52, 226, 105);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin: 0.8rem;
+            font-size: 20px;
+        }
+        
+        .cardLeft {
+            margin-top: 3rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background: rgb(35, 35, 38);
+        }
+        
+        .spacer {
+            width: 1%;
+        }
+        
+        .cardRight {
+            margin-top: 3rem;
+            padding: 0.5rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            background: rgb(35, 35, 38);
+            align-items: center;
+        }
+        
+        .container-right {
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 0.5rem;
+            background-color: rgb(22, 22, 22);
+            text-align: center;
+            width: 80%;
+        }
+        
+        .cardRight .container-right+p {
+            color: rgb(52, 226, 105);
+            font-size: 15px;
+            text-align: end;
+            padding: 3rem;
+        }
+        
+        .container-right h1 {
+            color: rgb(52, 226, 105);
+            font-size: 28px;
+        }
+        
+        .container-right p {
+            font-size: 20px;
+        }
+        
+        .bloco1 {
+            background-color: rgb(52, 226, 105);
+            color: #222;
+            border-radius: 4px;
+        }
+        
+        .bloco2 {
+            background-color: #90d0e4;
+            color: #222!important;
+            border-radius: 4px;
+        }
+        
+        .bloco1 p,
+        .bloco2 p {
+            color: rgb(0, 0, 0);
+        }
+        
+        .bloco1:hover,
+        .bloco2:hover {
+            opacity: .8;
+        }
+        
+        @media (max-width: 800px) {
+            .cardLeft {
+                padding: 1rem;
+                display: block;
+                text-align: justify;
+            }
+            .cardRight {
+                display: block;
+                padding: 1rem;
+                text-align: center;
+            }
+            .cardRight .container-right+p {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Agrupamento de Elementos</h1>
+    <div class="cardLeft">
+
+        <div class="container">
+            <br>Os elementos de agrupamento se dividem em alguns grupos,<br> Block-Level, Inline e Seletores Personalizados de Agrupamento<br><br></div>
+        <div class="container">
+            Os elementos<code>div</code>e span são usados para agrupar e estruturar um documento e são frequentemente usados em conjunto com os atributos class e id.
+        </div>
+    </div>
+
+    <div class="cardLeft">
+
+        <div class="container">
+            <h2>Elementos Block-level</h2>
+
+        </div>
+
+        <div class="container">
+            O elemento <code>div</code> é um elemento block-level. <br> Tem a função de agrupar elementos html, definindo blocos de contéudo sempre iniciando uma nova linha e ocupando toda a linha.<br> Exemplo: <br>
+            <div class="bloco1">
+                <p>
+                    Bloco 1
+                </p>
+            </div> <br>
+            <div class="bloco2">
+                <p>
+                    Bloco 2
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="cardLeft">
+        <div class="container">
+            <h2>Elementos Inline</h2>
+        </div>
+        <div class="container"> O elemento <code>span</code> é um elemento inline. É um elemento neutro embutidos que marcam um bloco dentro de uma mesma linha ou parágrafo. Pode ser usado pelo CSS para estilização de partes específicas do conteúdo do documento HTML
+        </div>
+    </div>
+
+    <div class="cardLeft">
+        <div class="container">
+            <h2>Seletores Personalizados</h2>
+        </div>
+
+        <div class="container">Possibilita personalizar tags do documento HTML para estilização. Temos os seletores do tipo classe e o seletor do tipo id
+        </div>
+    </div>
+    <div class="cardLeft">
+        <div class="container">
+            <h2>Seletor do tipo id</h2>
+        </div>
+
+        <div class="container">O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico. Cada id é única. O seletor de id é representado por “#”.
+        </div>
+    </div>
+
+    <div class="cardLeft">
+        <div class="container">
+            <h2> Seletor do tipo classe</h2>
+        </div>
+
+        <div class="container">O seletor de classe seleciona elementos HTML com um atributo de classe específico.O seletor de classe é representado por um ponto, “.”, e tem como alvo elementos com um determinado valor para seu atributo class. Para casos em que haja necessidade
+            de mais de um elemento com a mesma identificação usamos o atributo class.
+        </div>
+    </div>
+    <div class="cardLeft">
+        <div class="container">
+
+            <h2>Pseudo-Classes</h2>
+
+        </div>
+        <div class="container">Usada para definir um estado especial de um elemento. O seletor de classe é representado por dois pontos, “:”. Estão relacionados a um elemento ou uma classe.
+
+        </div>
+    </div>
+    <div class="cardLeft">
+        <div class="container">
+
+            <h2>Pseudo-Elementos</h2>
+        </div>
+
+        <div class="container">Usado para estilizar partes específicas de um elemento.O seletor de classe é representado por dois pontos seguido de dois pontos, “::”</div>
+
+
+</body>
+
+</html>

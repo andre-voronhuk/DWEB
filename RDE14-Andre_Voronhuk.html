@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: rgb(22, 22, 22);
+        }
+        
+        a {
+            text-decoration: none;
+            color: rgb(52, 226, 105);
+        }
+        
+        h2 {
+            color: rgb(52, 226, 105);
+        }
+        
+        a:hover {
+            text-decoration: overline;
+        }
+        
+        p {
+            color: rgb(250, 230, 230);
+        }
+        
+        .links {
+            padding: 1rem;
+            margin: 0 auto;
+            text-align: center;
+            flex-grow: 3;
+        }
+        
+        .links a {
+            padding: 22px;
+            font-size: 20px;
+        }
+        
+        .rodape,
+        .rodape * {
+            text-align: center;
+            font-size: 12px;
+            color: rgb(52, 226, 105);
+        }
+        
+        .containers {
+            background-color: rgb(32, 32, 34);
+            padding: 1rem;
+            border-radius: 6px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        .container {
+            width: 160%;
+            animation-duration: 0.5s;
+            transition: width 1s;
+        }
+        
+        @keyframes aumentar {
+            from {
+                width: 160%;
+            }
+            to {
+                width: 200%;
+            }
+        }
+        
+        .container:hover {
+            animation-name: aumentar;
+            width: 200%;
+        }
+        
+        header {
+            align-items: center;
+            flex-direction: row;
+        }
+        
+        .vr {
+            border-left: 2px solid rgb(52, 226, 105);
+            padding: 0.7rem;
+            margin-left: 1rem;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: rgb(35, 35, 38);
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: rgb(52, 226, 105);
+            border-radius: 8px;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: rgb(41, 172, 80);
+        }
+    </style>
+</head>
+<header>
+    <div class="logo">
+        <picture>
+            <img src="img/logo.png" alt="logo">
+        </picture>
+    </div>
+
+    <nav>
+        <div class="links">
+            <a href="#">Sobre</a>
+            <a href="#">Conteúdo</a>
+            <a href="#">O Projeto</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <div class="containers">
+        <div class="container">
+            <div class="item1">
+                <h2>Titulo 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+                    eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+            </div>
+        </div>
+        <div class="vr"></div>
+        <div class="container">
+            <div class="item2">
+                <h2>Titulo 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+                    eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+            </div>
+        </div>
+        <div class="vr"></div>
+        <div class="container">
+            <div class="item3">
+                <h2>Titulo 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+                    eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="rodape">
+            <p>© Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

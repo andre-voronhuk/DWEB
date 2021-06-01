@@ -8,6 +8,7 @@
     <title>Multimídias</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="voltar-botao/style-buttom.css">
     <style>
         html,
         body {
@@ -18,42 +19,35 @@
             box-sizing: border-box;
             color: rgb(129, 226, 118);
         }
-
+        
         hr {
             border: 1px solid rgb(129, 226, 118);
         }
-
+        
         body {
             background-color: rgb(20, 20, 26);
-
         }
-
+        
         h1 {
             text-align: center;
             margin-bottom: 3rem;
         }
-
-
-
-        ::-webkit-scrollbar {
+        
+         ::-webkit-scrollbar {
             background-color: rgb(40, 40, 46);
             width: 11px;
         }
-
-        ::-webkit-scrollbar-thumb {
+        
+         ::-webkit-scrollbar-thumb {
             background-color: rgb(129, 226, 118);
             border-radius: 8px;
-
         }
-
-        ::-webkit-scrollbar-thumb:hover {
+        
+         ::-webkit-scrollbar-thumb:hover {
             background-color: rgb(71, 138, 70);
             border-radius: 8px;
-
         }
-
-
-
+        
         .primeira-linha {
             display: inline-flex;
             flex-wrap: wrap;
@@ -63,7 +57,7 @@
             width: 90%;
             margin-left: 4rem;
         }
-
+        
         .item {
             width: 500px;
             height: 500px;
@@ -72,42 +66,39 @@
             margin-bottom: 3rem;
             overflow: wrap;
         }
-
+        
         .item img {
             height: 500px;
             width: 500px;
-
         }
-
+        
         video {
             padding: 1px;
         }
-
+        
         video:focus {
             outline: rgb(129, 226, 118)solid 1px;
         }
-
+        
         audio {
             padding: 1rem;
         }
-
+        
         audio:focus {
             outline: rgb(129, 226, 118)solid 1px;
         }
-
+        
         .header {
             padding: 0.1rem;
             background-color: rgb(130, 87, 230);
             margin: 0;
         }
-
+        
         @media (max-width: 600px) {
             .item img {
                 height: inherit;
                 width: inherit;
-
             }
-
             .primeira-linha {
                 display: inline-flex;
                 flex-wrap: wrap;
@@ -117,7 +108,6 @@
                 margin-left: 5%;
                 width: 90%;
             }
-
             .item {
                 width: 350px;
                 height: 500px;
@@ -145,27 +135,20 @@
                 Audio
             </h3>
             <hr>
-            <iframe width="100%" height="100%" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344045850&visual=true">
+            <iframe width="100%" height="100%" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344045850&visual=true">
             </iframe>
             <hr>
             <div style="
         font-size: 10px; 
         color: #2b2b2b;
         word-break: normal;">
-                <a href="https://soundcloud.com/almainey" title="Almainey" target="_blank"
-                    style="color: #48ad44; text-decoration: none;">Almainey</a> · <a
-                    href="https://soundcloud.com/almainey/sleepless" title="Sleepless" target="_blank"
-                    style="color: #48ad44; text-decoration: none;">Sleepless</a>
+                <a href="https://soundcloud.com/almainey" title="Almainey" target="_blank" style="color: #48ad44; text-decoration: none;">Almainey</a> · <a href="https://soundcloud.com/almainey/sleepless" title="Sleepless" target="_blank" style="color: #48ad44; text-decoration: none;">Sleepless</a>
             </div>
         </div>
         <div class="item">
             <h3>Video</h3>
             <hr>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EEkDDUPhyhk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EEkDDUPhyhk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <hr>
         </div>
 
@@ -199,8 +182,7 @@
                 <source media="(min-width:650px)" srcset="https://pbs.twimg.com/media/DUTzbzmX4AEv4tK.jpg:small">
 
 
-                <source media="(max-width:566px)"
-                    srcset="https://lyricstranslate.com/files/styles/large/public/boris-1024x1024.jpg">
+                <source media="(max-width:566px)" srcset="https://lyricstranslate.com/files/styles/large/public/boris-1024x1024.jpg">
 
                 </source>
 
@@ -210,10 +192,20 @@
             </picture>
 
 
+            <a href="./index.html" alt="Voltar ao inicio">
+
+
+                <div class="voltar">
+
+                    <p>
+                        < VOLTAR</p>
+                </div>
+            </a>
             <hr>
             <br><br><br>
         </div>
     </div>
+
 </body>
 
 </html>

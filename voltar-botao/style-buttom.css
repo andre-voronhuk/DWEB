@@ -1,0 +1,13 @@
+   .voltar {
+       position: fixed;
+       padding: 0.4rem;
+       bottom: 10px;
+       left: 10px;
+       background-color: rgba(52, 226, 105, 0.8);
+       border-radius: 8px;
+   }
+   
+   .voltar p {
+       color: #222;
+       font-weight: bold;
+   }

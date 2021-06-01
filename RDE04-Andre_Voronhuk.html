@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-Definições</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="voltar-botao/style-buttom.css">
 </head>
 <style>
     #name-container {
@@ -17,33 +18,28 @@
         height: 10%;
         width: fit-content;
         text-align: right;
-
     }
-
+    
     #name-container dt figcaption {
         color: rgb(16, 240, 16);
-
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-
     }
-
+    
     #name-container figure div {
         border-radius: 100%;
         overflow: hidden;
         height: 195px;
         width: 195px;
         border: 3px solid lime;
-
     }
 </style>
 
 <body>
 
     <p style="font-size:14px; ">
-    <div id="name-container">
-        <dl>
-            <dt>
+        <div id="name-container">
+            <dl>
+                <dt>
                 <figure>
                     <div>
                         <img src="https://avatars.githubusercontent.com/u/45769895?s=460&u=c7490fd75a8595e0a8b65d5267bed3265d9aee0e&v=4"
@@ -55,99 +51,105 @@
                     Andre L. Voronhuk
                 </h2>
             </dt>
-            <hr>
-            </figcaption>
-            <dt>
+                <hr>
+                </figcaption>
+                <dt>
                 <p style="font-size:14px;color:lime">
                     Analise e desenvolvimento de Sistemas
                     <br>
 
                 </p>
             </dt>
-            <dd>
-                <p style="font-size:14px;color:lime">
-                    <i>
+                <dd>
+                    <p style="font-size:14px;color:lime">
+                        <i>
                         2°Ano
                     </i>
-                </p>
-            </dd>
-        </dl>
+                    </p>
+                </dd>
+            </dl>
 
+            </figure>
+            </dt>
+
+
+        </div>
+
+
+        <figure>
+            <img src="https://www.seobility.net/en/wiki/images/a/a6/HTML-Doctype.png" alt="Imagem ilustrando HTML" height="250px" />
+            <figcaption>
+                <h1>HTML</h1>
+            </figcaption>
         </figure>
-        </dt>
 
-
-    </div>
-
-
-    <figure>
-        <img src="https://www.seobility.net/en/wiki/images/a/a6/HTML-Doctype.png" alt="Imagem ilustrando HTML"
-            height="250px" />
-        <figcaption>
-            <h1>HTML</h1>
-        </figcaption>
-    </figure>
-
-    <p>É uma <b> Linguagem de Marcação de Hipertexto </b> baseada em tags criada na década de 1990 por Tim Berners-Lee.
-        <br>
-        é utilizada para publicação de conteúdo em hipertexto, tais como:
-    <ol>
-        <strong>
+        <p>É uma <b> Linguagem de Marcação de Hipertexto </b> baseada em tags criada na década de 1990 por Tim Berners-Lee.
+            <br> é utilizada para publicação de conteúdo em hipertexto, tais como:
+            <ol>
+                <strong>
             <li>texto</li>
             <li>imagem</li>
             <li>áudio</li>
             <li>vídeo</li>
         </strong>
 
-    </ol><br> Que podem ser <i>vinculados</i> através de <em>hyperlinks</em>.</p>
+            </ol><br> Que podem ser <i>vinculados</i> através de <em>hyperlinks</em>.</p>
 
 
-    <hr>
-    <figure>
-        <img src="https://miro.medium.com/max/834/1*btGyl3NCaO-QKLxq8KEDCA.png" alt="Imagem Tags HTML" height="120px" />
-        <figcaption>
-            <h2>TAGS</h2>
-        </figcaption>
-    </figure>
+        <hr>
+        <figure>
+            <img src="https://miro.medium.com/max/834/1*btGyl3NCaO-QKLxq8KEDCA.png" alt="Imagem Tags HTML" height="120px" />
+            <figcaption>
+                <h2>TAGS</h2>
+            </figcaption>
+        </figure>
 
 
-    <p>As <big>tags</big> definem ao navegador a marcação de conteúdo.<br> As tags tem funcionalidades específicas. Sem
-        o uso de tags o navegador exibe um texto plano.</p>
+        <p>As <big>tags</big> definem ao navegador a marcação de conteúdo.<br> As tags tem funcionalidades específicas. Sem o uso de tags o navegador exibe um texto plano.</p>
 
-    <p>As tags podem possuir atributos, ou seja, são parâmetros que definem algum tipo de informação extra ao
-        <font color="blue " size="14 ">navegador.</font>
-    </p>
-
-    <!-- Coloquei line-height: 1.9; pq ficou muito juntinho, assim com o 
-        espaçamento maior, melhorou o visualização -->
-    <h4>Exemplos de <i>Tags </i></h4>
-    <ol>
-        <p style="line-height: 1.9;">
-            <li> <b>&ltb&gt Esse é um texto em Negrito!&lt/b&gt</b> <br>
-            </li>
-            <li>
-                <strong>&ltstrong&gt Esse é um texto Destacado! &lt/strong&gt </strong> <br>
-            </li>
-            <li>
-                <i>&lti&gt Esse é um texto em Italico &lt/i&gt</i> <br>
-            </li>
-            <li>
-                <em>&ltem&gt Esse é um texto com enfase &lt/em&gt </em> <br>
-            </li>
-            <li>
-                <big>&ltbig&gt eu sou GRANDÃO! &lt/big&gt </big> <br>
-            </li>
-            <li>
-                <font color="blue" size="5"> Font em azul e com tamanho 5 </font>
-            </li>
+        <p>As tags podem possuir atributos, ou seja, são parâmetros que definem algum tipo de informação extra ao
+            <font color="blue " size="14 ">navegador.</font>
         </p>
-    </ol>
-    <h1 style="color:#00cc00">
-        Instituto Federal do Paraná Campus Irati
-    </h1>
-    <p>
-        R. Pedro Koppe, 100 - Vila Sao Joao <br> Irati - PR <br> 84507-302 <br> Fone: (42) 2104-0200
-    </p>
+
+        <!-- Coloquei line-height: 1.9; pq ficou muito juntinho, assim com o 
+        espaçamento maior, melhorou o visualização -->
+        <h4>Exemplos de <i>Tags </i></h4>
+        <ol>
+            <p style="line-height: 1.9;">
+                <li> <b>&ltb&gt Esse é um texto em Negrito!&lt/b&gt</b> <br>
+                </li>
+                <li>
+                    <strong>&ltstrong&gt Esse é um texto Destacado! &lt/strong&gt </strong> <br>
+                </li>
+                <li>
+                    <i>&lti&gt Esse é um texto em Italico &lt/i&gt</i> <br>
+                </li>
+                <li>
+                    <em>&ltem&gt Esse é um texto com enfase &lt/em&gt </em> <br>
+                </li>
+                <li>
+                    <big>&ltbig&gt eu sou GRANDÃO! &lt/big&gt </big> <br>
+                </li>
+                <li>
+                    <font color="blue" size="5"> Font em azul e com tamanho 5 </font>
+                </li>
+            </p>
+        </ol>
+        <h1 style="color:#00cc00">
+            Instituto Federal do Paraná Campus Irati
+        </h1>
+        <p>
+            R. Pedro Koppe, 100 - Vila Sao Joao <br> Irati - PR <br> 84507-302 <br> Fone: (42) 2104-0200
+        </p>
+        <a href="./index.html" alt="Voltar ao inicio">
+
+
+            <div class="voltar">
+
+                <p>
+                    < VOLTAR</p>
+            </div>
+        </a>
 </body>
 
 </html>

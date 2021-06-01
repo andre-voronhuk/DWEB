@@ -15,6 +15,7 @@
         body {
             font-family: 'Noto Sans', sans-serif;
             background-color: rgb(22, 22, 22);
+            scroll-behavior: smooth;
         }
         
         a {
@@ -51,11 +52,13 @@
             text-align: center;
             font-size: 12px;
             color: rgb(52, 226, 105);
+            margin-top: 5%;
         }
         
         .containers {
             background-color: rgb(32, 32, 34);
             padding: 1rem;
+            margin: 1rem;
             border-radius: 6px;
             display: flex;
             flex-wrap: nowrap;
@@ -90,10 +93,12 @@
             border-left: 2px solid rgb(52, 226, 105);
             padding: 0.7rem;
             margin-left: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
         
          ::-webkit-scrollbar {
-            width: 12px;
+            width: 8px;
         }
         
          ::-webkit-scrollbar-track {
@@ -108,6 +113,60 @@
          ::-webkit-scrollbar-thumb:hover {
             background: rgb(41, 172, 80);
         }
+        
+        .projeto {
+            background-color: rgb(32, 32, 34);
+            border-radius: 5px;
+            padding: 1rem;
+            margin-top: 10%;
+        }
+        
+        .logo img {
+            align-self: center;
+            width: 80%;
+            image-rendering: optimizeQuality;
+        }
+        
+        .container-projeto {
+            display: flex;
+            width: auto;
+            -ms-flex-align: center;
+            padding: 1rem;
+        }
+        
+        .comment p {
+            padding: 1rem;
+            font-size: 12px;
+            color: rgb(52, 226, 105);
+        }
+        
+        @media (max-width: 800px) {
+            .containers {
+                background-color: inherit;
+                padding: none;
+                margin: 0px;
+                display: block;
+                flex-wrap: wrap;
+                width: 90%;
+            }
+            @keyframes aumentar {
+                from {}
+                to {}
+            }
+            .container:hover {
+                /* animation: none !important; */
+                width: auto;
+            }
+            .container {
+                width: auto;
+                background-color: rgb(32, 32, 34);
+                padding: 1rem;
+                border-radius: 6px;
+            }
+            .vr {
+                visibility: hidden;
+            }
+        }
     </style>
 </head>
 <header>
@@ -119,9 +178,9 @@
 
     <nav>
         <div class="links">
-            <a href="#">Sobre</a>
-            <a href="#">Conteúdo</a>
-            <a href="#">O Projeto</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="index.html">Conteúdo</a>
+            <a href="#projeto">O Projeto</a>
         </div>
     </nav>
 </header>
@@ -155,8 +214,23 @@
 
             </div>
         </div>
-    </div>
 
+    </div>
+    <div class="comment">
+        <p>
+            *Estilo 1: Padrão ao abrir o site <br> *Estilo 2: Ao passar o mouse sobre os containers <br> *Estilo 3: Ao acessar o site por um dispositivo móvel
+        </p>
+    </div>
+    <div class="container-projeto">
+
+
+        <div class="projeto" id="projeto">
+            <h2 style="text-align: center;">O Projeto</h2>
+            <p>O projeto tem por objetivo a criação e desenvolvimento de vários sites demonstrando a evolução dos alunos no processo de aprendizagem na area de desenvolvimento para Web, este mesmo projeto irá servir como um portifolio para os alunos, já
+                que eles (nós) terão a liberdade de personalizar da maneira que acharem mais interessante e agradavel,demonstrando assim até onde cada um conseguiu ir no decorrer da matéria!</p>
+
+        </div>
+    </div>
 
     <footer>
         <div class="rodape">

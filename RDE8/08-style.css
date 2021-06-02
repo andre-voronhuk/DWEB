@@ -1,0 +1,95 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(65, 65, 69);
+    color: white;
+}
+
+ ::-webkit-scrollbar {
+    width: 13px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: rgb(131, 131, 131);
+    box-shadow: 0 0 4px 3px rgb(27, 27, 27);
+    border-radius: 8px;
+    width: 8px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: rgb(90, 90, 90);
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgb(35, 35, 35);
+}
+
+.desc {
+    max-width: 400px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.content {
+    margin-left: 22px;
+}
+
+.title li {
+    margin-top: 5rem;
+    text-shadow: 0 3px 3px rgb(0, 0, 0);
+}
+
+.rodape {
+    margin-top: 1rem;
+    background-color: #666;
+    height: 10rem;
+    color: #ccc;
+    padding: 1rem;
+}
+
+u {
+    color: rgb(225, 54, 32);
+    font-stretch: expanded;
+}
+
+a {
+    color: lime;
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+code {
+    color: violet;
+    background-color: rgb(41, 43, 53);
+    padding: 2px;
+}
+
+table {
+    font-family: 'poppins', sans-serif;
+    margin: 12px;
+    font-size: 18px;
+    border-collapse: collapse;
+    width: fit-content;
+}
+
+tr:first-of-type {
+    color: rgb(214, 214, 214);
+}
+
+td,
+th {
+    border: 1px solid #F41;
+    text-align: center;
+    box-shadow: 0 1px 2px rgb(120, 7, 6);
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    color: #fff;
+    background-color: rgb(43, 43, 43);
+}

@@ -130,6 +130,10 @@ header {
     .logo img {
         width: 80%;
     }
+    .links a {
+        padding: 12px;
+        font-size: 18px;
+    }
     .containers {
         background-color: inherit;
         padding: none;

@@ -110,7 +110,6 @@ header {
 
 .logo img {
     align-self: center;
-    width: 80%;
     image-rendering: optimizeQuality;
 }
 
@@ -128,6 +127,9 @@ header {
 }
 
 @media (max-width: 800px) {
+    .logo img {
+        width: 80%;
+    }
     .containers {
         background-color: inherit;
         padding: none;

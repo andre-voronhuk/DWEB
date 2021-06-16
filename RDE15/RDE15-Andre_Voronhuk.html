@@ -7,15 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDE15 - Javascript</title>
     <link rel="stylesheet" href="15-style.css">
+
+    <script src="15-script.js">
+    </script>
+    <script>
+        // alert("essa mensagem vem antes da pagina carregar!")
+        window.onload = function() {
+            carregado()
+        }
+
+        function mouse() {
+            alert("voce passou o mouse no titulo \n\n(função dentro do arquivo html)")
+        }
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <h2> JavaScript no elemento</h2>
-        <button onclick="alert('Voce clicou no botão! \nEsse é um script no proprio componente')">
+    <div class="page ">
+
+
+        <div class="container ">
+            <h2 onmouseover="mouse() "> JavaScript no elemento</h2>
+            <button onclick="alert( 'Voce clicou no botão! \nEsse é um script no proprio componente') ">
 Clica em mim!
     </button>
+        </div>
+        <div class="container">
+            <h2>
+                Olá, <span id="nome"></span>
+
+            </h2>
+            <h3>
+
+                Você tem <span id="idade"></span> anos!
+            </h3>
+        </div>
     </div>
+    <div class="container">
+        <h2>Calculadora!</h2>
+
+        <input type="number" placeholder="Primeiro Valor" name="" id="n1">
+        <br>
+        <input type="number" placeholder="Segundo Valor" name="" id="n2">
+
+
+    </div>
+
 
 </body>
 

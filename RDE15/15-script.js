@@ -1,6 +1,10 @@
  nome = prompt("Bem Vindo!\nInsira seu nome por favor")
  idade = prompt("Bem Vindo!\nInsira sua idade")
 
+
+
+ var maior = true
+
  function carregado() {
 
 
@@ -12,9 +16,18 @@
 
 
      if (idade < 18) {
+         maior = false
          document.getElementById("maioridade").innerHTML = "não "
      }
  }
+
+ function mostrarDados() {
+     dados = ["Nome: ", nome, idade, " Anos ", "Maior de idade: ",
+         maior
+     ]
+     alert(dados)
+ }
+
 
  function calcular() {
      n1 = document.getElementById("n1").value
@@ -28,10 +41,17 @@
  }
 
  function tabuada() {
-     num = document.getElementById("num")
+     num = document.getElementById("num").value
+     if (num == "") {
+         document.getElementById("tabuadas").hidden = true
+     } else {
+         document.getElementById("tabuadas").hidden = false
+     }
+
      i = 0
      while (i < 11) {
-         document.getElementById("numero" + i).innerHTML = num.innerHTML
+         document.getElementById("numero" + i).innerHTML = num
+         document.getElementById("result" + i).innerHTML = num * i
          i++
      }
  }

@@ -20,6 +20,11 @@ html {
     background-attachment: fixed;
 }
 
+#link {
+    font-size: 12px;
+    font-family: monospace;
+}
+
 .page-container {
     background-color: #eee;
     width: 74%;

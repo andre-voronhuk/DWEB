@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    background-color: rgb(65, 65, 69);
-    color: white;
+    background-color: rgb(25, 25, 27);
+    color: rgb(196, 220, 255);
 }
 
  ::-webkit-scrollbar {
@@ -43,19 +43,19 @@ body {
 
 .rodape {
     margin-top: 1rem;
-    background-color: #666;
+    background-color: #333;
     height: 10rem;
     color: #ccc;
     padding: 1rem;
 }
 
 u {
-    color: rgb(225, 54, 32);
+    color: rgb(199, 130, 240);
     font-stretch: expanded;
 }
 
 a {
-    color: lime;
+    color: rgb(234, 81, 248);
 }
 
 h1 {

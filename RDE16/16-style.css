@@ -47,6 +47,7 @@
     button:hover {
         box-shadow: 0 0 12px 2px rgb(83, 77, 175);
         color: rgb(94, 49, 153);
+        cursor: pointer;
     }
     
     @media (max-width: 623px) {

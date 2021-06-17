@@ -58,4 +58,7 @@
         button {
             width: auto;
         }
+        .container {
+            margin: 0.5rem;
+        }
     }

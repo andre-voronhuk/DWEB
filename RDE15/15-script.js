@@ -26,3 +26,12 @@
 
 
  }
+
+ function tabuada() {
+     num = document.getElementById("num")
+     i = 0
+     while (i < 11) {
+         document.getElementById("numero" + i).innerHTML = num.innerHTML
+         i++
+     }
+ }
